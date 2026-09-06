@@ -1,0 +1,30 @@
+TEST CASE 1
+-----------
+
+Input:
+?- clear_symptoms,
+   add_symptom(engine_not_starting),
+   add_symptom(dim_headlights),
+   show_symptoms,
+   diagnose_car.
+
+Output:
+Observed symptoms: [engine_not_starting,dim_headlights]
+Possible car fault(s): [battery_problem]
+Recommendation for battery_problem: Check the battery terminals and battery charge. Replace the battery if required.
+
+
+TEST CASE 2
+-----------
+
+Input:
+?- clear_symptoms,
+   add_symptom(high_temperature),
+   add_symptom(steam_from_engine),
+   show_symptoms,
+   diagnose_car.
+
+Output:
+Observed symptoms: [high_temperature,steam_from_engine]
+Possible car fault(s): [engine_overheating]
+Recommendation for engine_overheating: Check coolant level and radiator. Stop driving if the engine temperature is very high.
